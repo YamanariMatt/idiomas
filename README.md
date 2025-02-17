@@ -1,4 +1,5 @@
 # Projeto Pessoal de Estudo de Idiomas e Programação
+https://yamanarimatt.github.io/idiomas/index.html
 
 Este projeto é uma iniciativa pessoal para combinar o aprendizado de idiomas com o estudo de programação. O objetivo é desenvolver uma plataforma que me ajude a praticar e aprender novos idiomas enquanto também aprendo e aplico novos conceitos de programação.
 
