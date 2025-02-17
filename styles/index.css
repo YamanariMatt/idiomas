@@ -1,0 +1,99 @@
+/* Centraliza todo o site */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    min-height: 100vh; /* Garante que ocupa a altura total da tela */
+    background-color: #191a1a;
+  }
+
+/* Navbar centralizada */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centraliza os links horizontalmente */
+  align-items: center; /* Alinha verticalmente */
+  height: 60px;
+  background-color: #333;
+}
+
+  
+ /* Links da navbar */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center; /* Centraliza o texto verticalmente */
+    height: 100%;
+  }
+
+  nav a:hover {
+    color: #37FF8B; /* Cor ao passar o mouse */
+  }
+  
+/* From Uiverse.io by adamgiebl */ 
+.container {
+    width: 100%;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    flex-grow: 1; /* Faz o conteúdo ocupar o espaço restante */
+
+  /* From Uiverse.io by satyamchaudharydev */ 
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    align-items: center; /* Centraliza o texto verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+    align-items: center; /* Centraliza o texto verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+}
